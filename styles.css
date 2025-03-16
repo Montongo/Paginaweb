@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, section, footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+.segmento {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.segmento h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.segmento p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #555;
+}
+
+.contenido {
+    margin-top: 15px;
+}
+
+.contenido h3 {
+    font-size: 1.4em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.contenido p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contenido img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0;
+    margin-top: auto;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .segmento {
+        padding: 15px;
+    }
+
+    .segmento h3 {
+        font-size: 1.5em;
+    }
+
+    .contenido img {
+        max-width: 100%;
+    }
+}
